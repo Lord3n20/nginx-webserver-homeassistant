@@ -1,0 +1,13 @@
+name: "nginx Webserver"
+description: "a simple nginx webserver"
+version: "2.0.1"
+slug: "nginx_webserver"
+init: false
+arch:
+  - aarch64
+  - amd64
+startup: services
+ports:
+  3000/tcp: 3000
+map:
+  - type: media
