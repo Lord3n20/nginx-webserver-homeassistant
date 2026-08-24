@@ -1,2 +1,30 @@
-# nginx-webserver-homeassistant
-A simple nginx webserver for Home Assistant
+# nginx-webserver for Home Assistant
+
+This is a very simple nginx-webserver to be used on top of Home Assistant
+
+For installation add this repository to your Home Assistant App repositories.
+
+[![Open your Home Assistant instance and show the app store with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_store.svg)](https://my.home-assistant.io/redirect/supervisor_store/?repository_url=https%3A%2F%2Fgithub.com%2FLord3n20%2Fnginx-webserver-homeassistant)
+
+Then you can install it via the appstore.
+Currently it only uses port 3000. Right now it cannot be changed quickly, maybe that will follow in the next versions.
+
+<!--
+Notes to developers after forking or using the github template feature:
+- While developing comment out the 'image' key from 'example/config.yaml' to make the supervisor build the app locally.
+  - Remember to put this back when pushing up your changes.
+- When you merge to the 'main' branch of your repository a new build will be triggered.
+  - Make sure you adjust the 'version' key in 'example/config.yaml' when you do that.
+  - Make sure you update 'example/CHANGELOG.md' when you do that.
+  - The first time this runs you might need to adjust the image configuration on github container registry to make it public.
+  - You may also need to adjust the GitHub Actions configuration (Settings > Actions > General > Workflow > Read & Write).
+- Update the repository check in '.github/workflows/build-app.yaml' to match your repository name
+  (the 'github.repository' condition in the 'prepare' job).
+- Adjust the 'image' key in 'example/config.yaml' so it points to your username instead of 'home-assistant'
+  (e.g., 'ghcr.io/my-username/my-app').
+- Rename the example directory.
+  - The 'slug' key in 'example/config.yaml' should match the directory name.
+- Adjust all keys/urls that point to 'home-assistant' to now point to your user/fork.
+- Share your repository on the forums https://community.home-assistant.io/c/projects/9
+- Do awesome stuff!
+ -->
