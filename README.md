@@ -1,13 +1,13 @@
-# nginx-webserver for Home Assistant
+# webserver for Home Assistant
 
-This is a very simple nginx-webserver to be used on top of Home Assistant
+This is a repo of simple Home Assistant Apps for serving a website.
+Currently just aa simple nginx-server on port 3000 exists.
 
 For installation add this repository to your Home Assistant App repositories.
 
 [![Open your Home Assistant instance and show the app store with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_store.svg)](https://my.home-assistant.io/redirect/supervisor_store/?repository_url=https%3A%2F%2Fgithub.com%2FLord3n20%2Fnginx-webserver-homeassistant)
 
 Then you can install it via the appstore.
-Currently it only uses port 3000. Right now it cannot be changed quickly, maybe that will follow in the next versions.
 
 <!--
 Notes to developers after forking or using the github template feature:
