@@ -1,7 +1,6 @@
 # webserver for Home Assistant
 
-This is a repo of simple Home Assistant Apps for serving a website.
-Currently just aa simple nginx-server on port 3000 exists.
+This is a repo of simple Home Assistant Apps for serving stuff
 
 For installation add this repository to your Home Assistant App repositories.
 
