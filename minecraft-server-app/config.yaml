@@ -19,5 +19,5 @@ options:
   max_players: 20
   motd: "Stierzunge"
   server_port: 25565
-volumes:
-  /data: {}
+map:
+  - type: data
