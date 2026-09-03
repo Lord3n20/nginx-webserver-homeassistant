@@ -1,5 +1,5 @@
 name: Minecraft Server
-description: Minecraft Java Server mit itzg/minecraft-server
+description: minecraft server with itzg/minecraft-server
 slug: minecraft_server
 homeassistant_api: true
 version: "1.0.0"
