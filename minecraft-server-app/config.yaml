@@ -1,0 +1,23 @@
+name: Unofficial Minecraft Server
+description: Minecraft Java Server
+version: 1.0.0
+slug: minecraft_server
+ports:
+  25565/tcp: 25565
+volumes:
+  - /data
+environment:
+  DIFFICULTY: normal
+  GAMEMODE: survival
+  MAX_PLAYERS: "20"
+  MOTD: "Stierzunge"
+options:
+  difficulty: normal
+  gamemode: survival
+  max_players: 20
+  motd: Welcome to my Minecraft Server
+schema:
+  difficulty: select(easy|normal|hard)
+  gamemode: select(survival|creative|adventure)
+  max_players: int(1,100)
+  motd: str
