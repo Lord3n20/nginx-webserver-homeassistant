@@ -18,7 +18,7 @@ environment:
   MEMORY: "6G"
   SERVER_PORT: "{{ server_port }}"
 options:
-  difficulty: "normal"
+  difficulty: 2
   gamemode: "survival"
   max_players: 20
   motd: "Stierzunge"
