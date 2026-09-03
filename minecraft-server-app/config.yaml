@@ -1,0 +1,51 @@
+name: Minecraft Server
+description: Minecraft Java Server mit itzg/minecraft-server
+slug: minecraft_server
+homeassistant_api: true
+version: "1.0.0"
+ports:
+  25565/tcp:
+    host_port: 25565
+environment:
+  EULA: "TRUE"
+  DIFFICULTY: "{{ difficulty }}"
+  GAMEMODE: "{{ gamemode }}"
+  MAX_PLAYERS: "{{ max_players }}"
+  MOTD: "{{ motd }}"
+  MEMORY: "6G"
+  SERVER_PORT: "{{ server_port }}"
+options:
+  difficulty: "normal"
+  gamemode: "survival"
+  max_players: 20
+  motd: "Stierzunge"
+  server_port: 25565
+schema:
+  difficulty:
+    type: select
+    options:
+      - "peaceful"
+      - "easy"
+      - "normal"
+      - "hard"
+  gamemode:
+    type: select
+    options:
+      - "survival"
+      - "creative"
+      - "adventure"
+      - "spectator"
+  max_players:
+    type: int
+    min: 1
+    max: 100
+  motd:
+    type: str
+    min: 1
+    max: 59
+  server_port:
+    type: int
+    min: 1024
+    max: 65535
+volumes:
+  /data: {}
