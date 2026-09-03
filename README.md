@@ -1,4 +1,4 @@
-# webserver for Home Assistant
+# some servers for Home Assistant
 
 This is a repo of simple Home Assistant Apps for serving stuff
 
