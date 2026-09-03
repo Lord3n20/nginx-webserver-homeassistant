@@ -4,8 +4,7 @@ slug: minecraft_server
 homeassistant_api: true
 version: "1.0.0"
 ports:
-  25565/tcp:
-    host_port: 25565
+  25565/tcp: 25565
 environment:
   EULA: "TRUE"
   DIFFICULTY: "{{ difficulty }}"
